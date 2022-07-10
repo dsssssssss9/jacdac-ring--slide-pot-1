@@ -1,8 +1,5 @@
 basic.showString("Frank")
-modules.led1.setBrightness(32)
-modules.led1.setAll(0x00ff00)
-basic.pause(200)
-modules.led1.setAll(0x000000)
+modules.led1.setBrightness(56)
 basic.forever(function () {
-	
+    modules.led1.plotBarGraph(modules.potentiometer1.position(), 100)
 })
